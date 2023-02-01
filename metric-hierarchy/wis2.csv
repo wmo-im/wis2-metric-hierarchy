@@ -1,0 +1,6 @@
+Name,Description,Child
+gb,Metrics related to the Global Brokers,gb
+gc,Metrics related to the Global Cache,gc
+gdc,Metrics related to the Global Discovery Catalogue,gdc
+node,Metrics from WIS2 nodes,node
+sensor,Metrics from Sensor Centres,sensor
