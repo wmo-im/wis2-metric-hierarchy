@@ -19,3 +19,11 @@ The primary topic levels are described in the following table. The individual le
 | **1** | organization | The root of the monitoring metrics is set fixed to [`wmo`] |
 | **2** | program | The second level of the hierarchy names the wmo program for which the metrics apply. WIS 2 related metrics are set to [`wis2`] |
 | **3** | service | Name of the service / data feed |
+
+## Labels
+
+All metrics should at least contain the label [`center`] which indicates whose status this metric refers to. 
+
+**Example** wmo\_wis2\_gc\_messagesreceived\{center=deu\}
+
+The labels are defined in the corresponding subdirectory of the metric names
