@@ -1,1 +1,6 @@
 Name,Description,Child
+messagesreceived,Number of MQTT messages received from Global Broker(s),-
+messagespublished,Number of MQTT messages published,-
+messagesdataerrors,Number of messages for which data download failed,-
+messagesduplicate,Number of messages for which data is already on the cache,-
+status,Status of the Global Cache

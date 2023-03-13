@@ -1,1 +1,7 @@
 Name,Description,Child
+basecountbystation,Expected number of observations from a station,-
+datacountbystation,Number of observations from a station received,-
+percentagebystation,Percentage of expected and received per station,-
+basecountbycountry,Expected number of observations aggregated by country,-
+datacountbycountry,Number of observations received aggregated by country,-
+percentagebycountry,Percentage of expected and received per country,-

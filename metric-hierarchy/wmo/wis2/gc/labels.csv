@@ -1,2 +1,3 @@
-Name,Description
-center,This metric is for the global cache with the given center name
+Name,Description,Note
+center_id,This metric is for the global cache with the given center name,-
+country,This metric is for the global cache located in country,-

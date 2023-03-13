@@ -1,0 +1,6 @@
+Name,Description,Note
+center_id,This metric is from the sensor at the given center,-
+country,This data item is from country,-
+id,WIGOS Station identifier,Only for per station data
+latitude,Latitude of report,Only for per station data
+longitude,Longitude of observation,Only for per station data
