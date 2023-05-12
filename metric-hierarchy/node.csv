@@ -1,3 +1,3 @@
 Name,Description,Child
-messagespublished,Number of messages published by the node,-
+published,Number of messages published by the node,-
 status,Status of the node

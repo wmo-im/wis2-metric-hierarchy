@@ -1,3 +1,4 @@
 Name,Description,Note
-center_id,This metric is for the WIS2 node with the given center name,-
-country,This metric is for the WIS2 node located in country,-
+centre_id,This metric concerns data from the given centre,-
+country,This metric concerns data from country,-
+report_by,This metric is for the global cache with the given centre name,-

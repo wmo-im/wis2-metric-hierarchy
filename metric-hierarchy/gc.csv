@@ -1,7 +1,10 @@
 Name,Description,Child
-messagesreceived,Number of MQTT messages received from Global Broker(s),-
-messagespublished,Number of MQTT messages published,-
-messagesdataerrors,Number of messages for which data download failed,-
-messagesreceivederrors,Number of messages with errors,-
-messagesduplicate,Number of messages for which data is already on the cache,-
-status,Status of the Global Cache
+received,Number of MQTT messages received from all subscribed Global Broker(s),-
+received_errors,Number of received messages with message errors,-
+received_duplicate,Number of messages already received via other subscribed Global Broker and/or for which data is already on the cache,-
+received_withcontent,Number of messages where data is extracted from message content field,-
+published,Number of MQTT messages published for Global Broker,-
+published_errors,Number of publish errors on local message broker for GC messages,-
+downloaded,Number of data items downloaded to Global Cache,-
+downloaded_errors,Number of download errors for Global Cache data,-
+status,Status of the Global Cache,-
