@@ -8,4 +8,4 @@ published_errors,country|centre_id|report_by,Number of publish errors on local m
 downloaded,country|centre_id|report_by,Number of data items downloaded to Global Cache,-
 downloaded_errors,country|centre_id|report_by,Number of download errors for Global Cache data,-
 status,-,Status of the Global Cache,-
-dataserver_status,country|centre_id|report_by,Status of WIS2 Node dataserver (1 - up, 0 - down),-
+dataserver_status,country|centre_id|report_by,Status of WIS2 Node dataserver (1-up and 0-down),-
