@@ -7,5 +7,8 @@ published,country|centre_id|report_by,Number of MQTT messages published for Glob
 published_errors,country|centre_id|report_by,Number of publish errors on local message broker for GC messages,-
 downloaded,country|centre_id|report_by,Number of data items downloaded to Global Cache,-
 downloaded_errors,country|centre_id|report_by,Number of download errors for Global Cache data,-
-status,-,Status of the Global Cache,-
 dataserver_status,country|centre_id|report_by,Status of WIS2 Node dataserver (1-up and 0-down),-
+dataserver_available,country|centre_id|report_by,Status of the Global Caches dataserver,-
+dataserver_response_time,country|centre_id|report_by,Response time of the Global Caches dataserver,-
+broker_available,country|centre_id|report_by,Status of the Global Caches broker,-
+broker_response_time,country|centre_id|report_by,Response time of the Global Caches broker,-

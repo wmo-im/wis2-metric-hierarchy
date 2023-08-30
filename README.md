@@ -22,8 +22,8 @@ The primary topic levels are described in the following table. The individual le
 
 ## Labels
 
-All metrics should at least contain the label [`center`] which indicates whose status this metric refers to. 
+All metrics should at least contain the labels [`centre_id`] which indicates whose status this metric refers to, [`country`] the country in which `centre_id`is located and [`report_by`] the name of the centre reporting this metric.
 
-**Example** wmo\_wis2\_gc\_messagesreceived\{center=deu\}
+**Example** wmo\_wis2\_gc\_received\{centre\_id=\"German Meteorological Service\",country=\"deu\",report\_by=\"dwd\"}
 
-The labels are defined in the corresponding subdirectory of the metric names
+The further required labels are part of the metric definition.
