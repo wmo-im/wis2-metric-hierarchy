@@ -1,1 +1,9 @@
 Name,Labels,Description,Child
+gc_cache_delay,globalcache,,-
+gc_messages_cached,cached|centre_id|source,,-
+gc_messages_published,from|source,,-
+gc_messages_received,from|source,,-
+messages_by_origin,cached|centre_id|source,,-
+messages_invalid,centre_id|country|report_by,,-
+messages_published,centre_id|country|report_by,,-
+messages_received,centre_id|country|report_by,,-
