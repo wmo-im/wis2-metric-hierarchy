@@ -1,9 +1,6 @@
 Name,Labels,Description,Child
-gc_cache_delay,globalcache,,-
-gc_messages_cached,cached|centre_id|source,,-
-gc_messages_published,from|source,,-
-gc_messages_received,from|source,,-
-messages_by_origin,cached|centre_id|source,,-
-messages_invalid,centre_id|country|report_by,,-
-messages_published,centre_id|country|report_by,,-
-messages_received,centre_id|country|report_by,,-
+wmo_wis2_gb_messages_invalid,centre_id|country|report_by,Number of invalid messages from centre,-
+wmo_wis2_gb_messages_published,centre_id|country|report_by,Number of messages published by broker,-
+wmo_wis2_gb_messages_received,centre_id|country|report_by,Number of messages received by broker,-
+wmo_wis2_gb_connected,centre_id|country|report_by,Connection status from broker to centre,-
+wmo_wis2_gb_last_message,centre_id|country|report_by,Timestamp of last message received from centre,-
