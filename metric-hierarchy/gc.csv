@@ -1,14 +1,7 @@
 Name,Labels,Description,Child
-received,country|centre_id|report_by|global_broker,Number of MQTT messages received from all subscribed Global Broker(s),-
-received_errors,country|centre_id|report_by|global_broker,Number of received messages with message errors,-
-received_duplicate,country|centre_id|report_by|global_broker,Number of messages already received via other subscribed Global Broker and/or for which data is already on the cache,-
-received_withcontent,country|centre_id|report_by|global_broker,Number of messages where data is extracted from message content field,-
-published,country|centre_id|report_by,Number of MQTT messages published for Global Broker,-
-published_errors,country|centre_id|report_by,Number of publish errors on local message broker for GC messages,-
-downloaded,country|centre_id|report_by,Number of data items downloaded to Global Cache,-
-downloaded_errors,country|centre_id|report_by,Number of download errors for Global Cache data,-
-dataserver_status,country|centre_id|report_by,Status of WIS2 Node dataserver (1-up and 0-down),-
-dataserver_available,country|centre_id|report_by,Status of the Global Caches dataserver,-
-dataserver_response_time,country|centre_id|report_by,Response time of the Global Caches dataserver,-
-broker_available,country|centre_id|report_by,Status of the Global Caches broker,-
-broker_response_time,country|centre_id|report_by,Response time of the Global Caches broker,-
+wmo_wis2_gc_gb_connected,centre_id|report_by,Connection status to the Global Broker,-
+wmo_wis2_gc_gb_lastmessage,centre_id|report_by,Timestamp of the last message from the Global Broker,-
+wmo_wis2_gc_downloaded,country|centre_id|report_by,Number of data items downloaded to Global Cache,-
+wmo_wis2_gc_downloaded_errors,country|centre_id|report_by,Number of download errors for Global Cache data,-
+wmo_wis2_gc_dataserver_status,country|centre_id|report_by,Status of WIS2 Node dataserver (1-up and 0-down),-
+wmo_wis2_gc_dataserver_last_download,country|centre_id|report_by,Timestamp of last succesful download,-
