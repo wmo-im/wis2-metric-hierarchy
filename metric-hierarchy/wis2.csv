@@ -3,4 +3,7 @@ gb,Metrics related to the Global Brokers,gb
 gc,Metrics related to the Global Cache,gc
 gdc,Metrics related to the Global Discovery Catalogue,gdc
 node,Metrics from WIS2 nodes,node
-sensor,Metrics from Sensor Centres,sensor
+sgc,Metrics on the Performance of Global Caches from Sensor Centres,sgc
+sgb,Metrics on the Performance of Global Brokers from Sensor Centres,sgb
+sgdc,Metrics on the Performance of Global Discovery Catalogues from Sensor Centres,sgdc
+sobs,Metrics on the Availability of Observations from Sensor Centres,sobs

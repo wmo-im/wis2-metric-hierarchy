@@ -1,0 +1,5 @@
+Name,Labels,Description,Child
+wmo_wis2_sgc_cache_delay,globalcache,Delay between origin and cache message,-
+wmo_wis2_sgc_messages_cached,cached|centre_id|source,Number of messages for data on the cache,-
+wmo_wis2_sgc_messages_published,from|source,Number of messages published to the cache,-
+wmo_wis2_sgc_messages_received,from|source,Number of messages received from the cache,-

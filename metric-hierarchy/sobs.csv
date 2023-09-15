@@ -1,0 +1,7 @@
+Name,Labels,Description,Child
+wmo_wis2_sobs_basecountbystation,centre_id|country|report_by|id|latitude|longitude,Expected number of observations from a station,-
+wmo_wis2_sobs_datacountbystation,centre_id|country|report_by|id|latitude|longitude,Number of observations from a station received,-
+wmo_wis2_sobs_percentagebystation,centre_id|country|report_by|id|latitude|longitude,Percentage of expected and received per station,-
+wmo_wis2_sobs_basecountbycountry,centre_id|country|report_by,Expected number of observations aggregated by country,-
+wmo_wis2_sobs_datacountbycountry,centre_id|country|report_by,Number of observations received aggregated by country,-
+wmo_wis2_sobs_percentagebycountry,centre_id|country|report_by,Percentage of expected and received per country,-
