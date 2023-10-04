@@ -1,1 +1,10 @@
 Name,Labels,Description,Child
+wmo_wis2_gdc_passed_total,centre_id|report_by,Number of metadata records passed validation,-
+wmo_wis2_gdc_failed_total,centre_id|report_by,Number of metadata records failed validation,-
+wmo_wis2_gdc_core_total,centre_id|report_by,Number of core metadata records,-
+wmo_wis2_gdc_recommended_total,centre_id|report_by,Number of recommended metadata records,-
+wmo_wis2_gdc_kpi_percentage_total,metadata_id|centre_id|report_by,KPI percentage for a single metadata record (metadata_id equals WCMP2 id),-
+wmo_wis2_gdc_kpi_percentage_average,centre_id|report_by,Average KPI percentage,-
+wmo_wis2_gdc_kpi_percentage_over80_total,centre_id|report_by,Number of metadata records with KPI percentage over 80,-
+wmo_wis2_gdc_search_total,centre_id|report_by,Number of search requests (during last monitoring period, e.g. one month),-
+wmo_wis2_gdc_search_terms,top|centre_id|report_by,Most popular search terms (e.g. top=1 to top=5),-
