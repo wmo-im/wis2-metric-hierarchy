@@ -1,7 +1,5 @@
 Name,Labels,Description,Child
-wmo_wis2_gc_gb_connected,centre_id|report_by,Connection status to the Global Broker,-
-wmo_wis2_gc_gb_lastmessage,centre_id|report_by,Timestamp of the last message from the Global Broker,-
-wmo_wis2_gc_downloaded,country|centre_id|report_by,Number of data items downloaded to Global Cache,-
-wmo_wis2_gc_downloaded_errors,country|centre_id|report_by,Number of download errors for Global Cache data,-
-wmo_wis2_gc_dataserver_status,country|centre_id|report_by,Status of WIS2 Node dataserver (1-up and 0-down),-
-wmo_wis2_gc_dataserver_last_download,country|centre_id|report_by,Timestamp of last succesful download,-
+wmo_wis2_gc_downloaded_total,country|centre_id|report_by,Number of data items downloaded to Global Cache,-
+wmo_wis2_gc_downloaded_errors_total,country|centre_id|report_by,Number of download errors for Global Cache data,-
+wmo_wis2_gc_dataserver_status_flag,country|centre_id|report_by,Status of WIS2 Node dataserver (1-up and 0-down),-
+wmo_wis2_gc_dataserver_last_download_timestamp_seconds,country|centre_id|report_by,Timestamp of last succesful download,-

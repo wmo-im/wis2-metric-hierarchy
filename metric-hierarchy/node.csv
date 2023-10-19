@@ -1,4 +1,0 @@
-Name,Labels,Description,Child
-published,country|centre_id|report_by,Number of messages published by the node,-
-published_errors,country|centre_id|report_by,Amount of publish errors of the node,-
-status,-,Status of the node,-
