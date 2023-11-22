@@ -1,4 +1,5 @@
 Name,Labels,Description,Child
+wmo_wis2_gb_messages_no_metadata_total,centre_id|country|report_by,Number of messages received without corresponding metadata from centre,-
 wmo_wis2_gb_messages_invalid_total,centre_id|country|report_by,Number of invalid messages from centre,-
 wmo_wis2_gb_messages_published_total,centre_id|country|report_by,Number of messages published by broker,-
 wmo_wis2_gb_messages_received_total,centre_id|country|report_by,Number of messages received by broker,-
