@@ -1,7 +1,7 @@
 Name,Labels,Description,Child
-wmo_wis2_gb_messages_no_metadata_total,centre_id|country|report_by,Number of messages received without corresponding metadata from centre,-
-wmo_wis2_gb_messages_invalid_total,centre_id|country|report_by,Number of invalid messages from centre,-
-wmo_wis2_gb_messages_published_total,centre_id|country|report_by,Number of messages published by broker,-
-wmo_wis2_gb_messages_received_total,centre_id|country|report_by,Number of messages received by broker,-
-wmo_wis2_gb_connected_flag,centre_id|country|report_by,Connection status from broker to centre,-
-wmo_wis2_gb_last_message_timestamp_seconds,centre_id|country|report_by,Timestamp of last message received from centre,-
+wmo_wis2_gb_messages_no_metadata_total,centre_id|report_by,Number of messages received without corresponding metadata from centre,-
+wmo_wis2_gb_messages_invalid_total,centre_id|report_by,Number of invalid messages from centre,-
+wmo_wis2_gb_messages_published_total,centre_id|report_by,Number of messages published by broker,-
+wmo_wis2_gb_messages_received_total,centre_id|report_by,Number of messages received by broker,-
+wmo_wis2_gb_connected_flag,centre_id|report_by,Connection status from broker to centre,-
+wmo_wis2_gb_last_message_timestamp_seconds,centre_id|report_by,Timestamp of last message received from centre,-
