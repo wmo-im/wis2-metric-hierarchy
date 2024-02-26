@@ -3,3 +3,5 @@ wmo_wis2_gc_downloaded_total,centre_id|report_by,Number of data items downloaded
 wmo_wis2_gc_downloaded_errors_total,centre_id|report_by,Number of download errors for Global Cache data,-
 wmo_wis2_gc_dataserver_status_flag,centre_id|dataserver|report_by,Status of WIS2 Node dataserver (1-up and 0-down),-
 wmo_wis2_gc_dataserver_last_download_timestamp_seconds,centre_id|dataserver|report_by,Timestamp of last succesful download,-
+wmo_wis2_gc_cache_override_total,centre_id|report_by,Number of messages for which the Global Cache overrides the cache flag,-
+wmo_wis2_gc_integrity_failed_total,centre_id|report_by,Number of messages for which the integrity check failed,-
