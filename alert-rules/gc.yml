@@ -1,0 +1,44 @@
+groups:
+  - name: GlobalCache
+    rules:
+      # No data is received from that center over the last 6 hours
+      - alert: No_data_from_center
+        expr: group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_total[1h]) == 0) > 0
+        for: 5h
+        labels:
+          severity: warning
+      
+      # No data is received by Global Cache over the last hour
+      - alert: No_data
+        expr: sum by (report_by) (delta(wmo_wis2_gc_downloaded_total[1h])) == 0
+        for: 15m
+        labels:
+          severity: critical
+      
+      # More than 10 download errors from center in the last hour for 6 hours
+      - alert: Download_errors_from_center
+        expr: group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h]) > 10) > 0
+        for: 6h
+        labels:
+          severity: warning
+      
+      # More than 10 centers have download errors in the last hour over 1 hour
+      - alert: Download_errors
+        expr: sum by (report_by) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h])>10)) > 10
+        for: 1h
+        labels:
+          severity: warning
+      
+      # Connection error to dataserver over 24h
+      - alert: Dataserver_connection
+        expr: group by (centre_id,report_by,dataserver) (wmo_wis2_gc_dataserver_status_flag == 0) == 1
+        for: 24h
+        labels:
+          severity: warning
+      
+      # Connection errors more than 10 data servers for 1h
+      - alert: No_connection
+        expr: sum by (report_by) (group by (centre_id,report_by,dataserver) (wmo_wis2_gc_dataserver_status_flag == 0)) > 10
+        for: 1h
+        labels:
+          severity: critical
