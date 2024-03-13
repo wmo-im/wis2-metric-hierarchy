@@ -1,2 +1,9 @@
 groups:
-  - name: GlobalDiscoveryCatalog
+  - name: GlobalDiscoveryCatalogue
+    rules:
+      # Connection to a centre is lost
+      - alert: Connection_lost_from_centre
+        expr: group by (centre_id,report_by) (wmo_wis2_gdc_connected_flag 0) > 0
+        for: 1m
+        labels:
+          severity: critical        
