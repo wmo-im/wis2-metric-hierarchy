@@ -55,4 +55,4 @@ groups:
         expr: sum by (report_by) (group by (centre_id,report_by,dataserver) (wmo_wis2_gc_dataserver_status_flag == 0)) > 20
         for: 1h
         labels:
-          severity: error
+          severity: critical
