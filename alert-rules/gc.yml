@@ -7,6 +7,13 @@ groups:
         for: 5h
         labels:
           severity: warning
+    
+      # No data is received from that center by all caches over the last 6 hours
+      - alert: No_data_from_center_all_caches
+        expr: sum by (centre_id) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_total[1h]) == 0)) > 2
+        for: 5h
+        labels:
+          severity: error
       
       # No data is received by Global Cache over the last hour
       - alert: No_data
@@ -22,6 +29,13 @@ groups:
         labels:
           severity: warning
       
+      # More than 10 download errors from center in the last hour for 6 hours at all caches
+      - alert: Download_errors_all_caches
+        expr: sum by (centre_id) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h])>10)) > 2
+        for: 6h
+        labels:
+          severity: error
+
       # More than 10 centers have download errors in the last hour over 1 hour
       - alert: Download_errors
         expr: sum by (report_by) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h])>10)) > 10
@@ -42,6 +56,13 @@ groups:
         for: 24h
         labels:
           severity: warning
+ 
+      # Connection error to data server over 24h from all caches
+      - alert: Dataserver_connection_all_caches
+        expr: sum by (centre_id) (group by (centre_id,report_by,dataserver) (wmo_wis2_gc_dataserver_status_flag == 0)) > 2
+        for: 24h
+        labels:
+          severity: error
       
       # Connection errors to more than 10 data servers for 1h
       - alert: No_connection_error
