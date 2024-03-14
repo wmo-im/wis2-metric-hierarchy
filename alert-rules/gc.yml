@@ -30,7 +30,7 @@ groups:
           severity: error
       
       # More than 20 centers have download errors in the last hour over 1 hour
-      - alert: Download_errors
+      - alert: Download_errors_critical
         expr: sum by (report_by) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h])>10)) > 20
         for: 1h
         labels:
@@ -44,14 +44,14 @@ groups:
           severity: warning
       
       # Connection errors to more than 10 data servers for 1h
-      - alert: No_connection
+      - alert: No_connection_error
         expr: sum by (report_by) (group by (centre_id,report_by,dataserver) (wmo_wis2_gc_dataserver_status_flag == 0)) > 10
         for: 1h
         labels:
           severity: error
       
       # Connection errors to more than 20 data servers for 1h
-      - alert: No_connection
+      - alert: No_connection_critical
         expr: sum by (report_by) (group by (centre_id,report_by,dataserver) (wmo_wis2_gc_dataserver_status_flag == 0)) > 20
         for: 1h
         labels:
