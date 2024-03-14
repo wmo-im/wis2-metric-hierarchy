@@ -3,13 +3,13 @@ groups:
     rules:
       # Connection to a Global Broker is lost
       - alert: Connection_lost_from_global_broker
-        expr: group by (centre_id) (wmo_wis2_gdc_connected_flag{"centre-id" =~ ".*global-broker"} == 0) > 0
+        expr: group by (centre_id) (wmo_wis2_gdc_connected_flag{centre_id =~ ".*global-broker"} == 0) > 0
         for: 10m
         labels:
           severity: critical        
       # Download errors from Global Cache in the last hour
       - alert: Download_errors_from_global_cache
-        expr: group by (centre_id) (delta (wmo_wis2_gdc_downloaded_errors_total[1h]{"centre-id" =~ ".*global-cache"}) > 0) > 0
+        expr: group by (centre_id) (delta (wmo_wis2_gdc_downloaded_errors_total{centre_id =~ ".*global-cache"}[1h]) > 0) > 0
         for: 1h
         labels:
           severity: warning
