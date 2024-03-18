@@ -7,6 +7,8 @@ groups:
         for: 5h
         labels:
           severity: warning
+        annotations:
+          summary: No data is received from that center over the last 6 hours. 
     
       # No data is received from that center by all caches over the last 6 hours
       - alert: No_data_from_center_all_caches
@@ -14,6 +16,8 @@ groups:
         for: 5h
         labels:
           severity: error
+        annotations:
+          summary: No cache is receiving data from that center over the last 6 hours.
       
       # No data is received by Global Cache over the last hour
       - alert: No_data
@@ -21,6 +25,8 @@ groups:
         for: 15m
         labels:
           severity: critical
+        annotations:
+          summary: The Global cache is not receiving any data since 1 hour.
       
       # More than 10 download errors from center in the last hour for 6 hours
       - alert: Download_errors_from_center
@@ -28,6 +34,8 @@ groups:
         for: 6h
         labels:
           severity: warning
+        annotations:
+          summary: The Global cache has more than 10 download errors from center in 1 hour over the last 6 hours
       
       # More than 10 download errors from center in the last hour for 6 hours at all caches
       - alert: Download_errors_all_caches
@@ -35,6 +43,8 @@ groups:
         for: 6h
         labels:
           severity: error
+        annotations:
+          summary: All caches have more than 10 download errors from center in 1 hour over the last 6 hours
 
       # More than 10 centers have download errors in the last hour over 1 hour
       - alert: Download_errors
@@ -42,6 +52,8 @@ groups:
         for: 1h
         labels:
           severity: error
+        annotations:
+          summary: The Global Cache has download errors for more than 10 centers per 1 hour over the last 1 hour
       
       # More than 20 centers have download errors in the last hour over 1 hour
       - alert: Download_errors_critical
@@ -49,6 +61,8 @@ groups:
         for: 1h
         labels:
           severity: critical
+        annotations:
+          summary: The Global Cache has download errors for more than 20 centers per 1 hour over the last 1 hour
       
       # Connection error to dataserver over 24h
       - alert: Dataserver_connection
@@ -56,6 +70,8 @@ groups:
         for: 24h
         labels:
           severity: warning
+        annotations:
+          summary: The Global Cache can not connect to the dataserver for 24 hours
  
       # Connection error to data server over 24h from all caches
       - alert: Dataserver_connection_all_caches
@@ -63,6 +79,8 @@ groups:
         for: 24h
         labels:
           severity: error
+        annotations:
+          summary: No cache can connect to the dataserver for 24 hours
       
       # Connection errors to more than 10 data servers for 1h
       - alert: No_connection_error
@@ -70,6 +88,8 @@ groups:
         for: 1h
         labels:
           severity: error
+        annotations:
+          summary: The Global Cache can not connect to more than 10 dataservers in the last hour
       
       # Connection errors to more than 20 data servers for 1h
       - alert: No_connection_critical
@@ -77,3 +97,5 @@ groups:
         for: 1h
         labels:
           severity: critical
+        annotations:
+          summary: The Global Cache can not connect to more than 20 dataservers in the last hour
