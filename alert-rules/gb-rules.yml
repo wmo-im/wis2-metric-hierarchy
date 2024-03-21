@@ -1,0 +1,5 @@
+groups:
+  - name: monitoring
+    rules:
+      - record: globalmonitor:wmo_wis2_gm_gb_connectivity:total
+        expr: count by (centre_id) (wmo_wis2_gb_connected_flag{report_by=~".*-global-broker"} == 0 or wmo_wis2_gb_connected_flag{report_by=~".*-global-broker"} == 1)
