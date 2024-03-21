@@ -1,5 +1,5 @@
 groups:
-- name: "Disconnected WIS2 Nodes from one Global Broker"
+- name: GlobalBroker
   rules:
   - alert: disconnectedwis2nodeonegb
     expr: wmo_wis2_gb_connected_flag == 0
@@ -9,8 +9,6 @@ groups:
     annotations:
       summary: Disconnected WIS2 Node from one Global Broker
 
-- name: "Disconnected WIS2 Nodes from multiple Global Brokers"
-  rules:
   - alert: disconnectedwis2nodemultiplegb
     expr: count by (centre_id) ( wmo_wis2_gb_connected_flag == 0 ) > 1
     for: 20m
@@ -19,8 +17,6 @@ groups:
     annotations:
       summary: Disconnected WIS2 Node from multiple Global Brokers
 
-- name: "Disconnected WIS2 Nodes from all Global Brokers"
-  rules:
   - alert: disconnectedwis2nodeallgb
     expr: ( globalmonitor:wmo_wis2_gm_gb_connectivity:total - count by (centre_id) ( wmo_wis2_gb_connected_flag == 0 ) == 0 )
     for: 30m
