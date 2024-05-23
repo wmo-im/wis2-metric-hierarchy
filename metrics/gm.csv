@@ -1,3 +1,3 @@
-Name,Labels,Description,Child
-wmo_wis2_gm_metricserver_status_flag,centre_id|report_by,Status of the metric endpoint for centre (1-up and 0-down),-
-wmo_wis2_gm_metricserver_last_scrape_timestamp_seconds,centre_id|report_by,Timestamp of last succesful metric scrape,-
+Name,Labels,Description,Child,Initialize
+wmo_wis2_gm_metricserver_status_flag,centre_id|report_by,Status of the metric endpoint for centre (1-up and 0-down),-,false
+wmo_wis2_gm_metricserver_last_scrape_timestamp_seconds,centre_id|report_by,Timestamp of last succesful metric scrape,-,false
