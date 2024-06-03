@@ -6,4 +6,4 @@ wmo_wis2_gc_dataserver_last_download_timestamp_seconds,centre_id|dataserver|repo
 wmo_wis2_gc_no_cache_total,centre_id|report_by,Number of data objects that Global Cache has been requested not to cache (based on the properties.cache flag),-,false
 wmo_wis2_gc_cache_override_total,centre_id|report_by,Number of messages for which the Global Cache overrides the cache flag,-,false
 wmo_wis2_gc_integrity_failed_total,centre_id|report_by,Number of messages for which the integrity check failed,-,false
-wmo_wis2_gc_last_metadata,centre_id|report_by,Timestamp of last metadata resource processed,-,false
+wmo_wis2_gc_last_metadata_timestamp_seconds,centre_id|report_by,Timestamp of last GDC metadata package resource processed,-,false
