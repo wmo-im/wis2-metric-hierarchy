@@ -75,7 +75,7 @@ groups:
  
       # Connection error to data server over 24h from all caches
       - alert: Dataserver_connection_all_caches
-        expr: sum by (centre_id) (group by (centre_id,report_by,dataserver) (wmo_wis2_gc_dataserver_status_flag == 0)) > 2
+        expr: sum by (centre_id,dataserver) (group by (centre_id,report_by,dataserver) (wmo_wis2_gc_dataserver_status_flag == 0)) > 2
         for: 24h
         labels:
           severity: error
