@@ -1,4 +1,5 @@
 Name,Labels,Description,Child,Initialize
+wmo_wis2_gdc_metrics_info,,"Diagnostic of GDC centre identifier, API URL, and GB subscribed to",-,true
 wmo_wis2_gdc_passed_total,centre_id|report_by,Number of metadata records passed validation,-,true
 wmo_wis2_gdc_failed_total,centre_id|report_by,Number of metadata records failed validation,-,true
 wmo_wis2_gdc_core_total,centre_id|report_by,Number of core metadata records,-,true
