@@ -1,23 +1,23 @@
 groups:
   - name: GlobalCache
     rules:
-      # No data is received from that center over the last 6 hours
-      - alert: No_data_from_center
+      # No data is received from that centre over the last 6 hours
+      - alert: No_data_from_centre
         expr: group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_total[1h]) == 0) > 0
         for: 5h
         labels:
           severity: warning
         annotations:
-          summary: No data is received from that center over the last 6 hours. 
+          summary: No data is received from that centre over the last 6 hours.
     
-      # No data is received from that center by all caches over the last 6 hours
-      - alert: No_data_from_center_all_caches
+      # No data is received from that centre by all caches over the last 6 hours
+      - alert: No_data_from_centre_all_caches
         expr: sum by (centre_id) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_total[1h]) == 0)) > 2
         for: 5h
         labels:
           severity: error
         annotations:
-          summary: No cache is receiving data from that center over the last 6 hours.
+          summary: No cache is receiving data from that centre over the last 6 hours.
       
       # No data is received by Global Cache over the last hour
       - alert: No_data
@@ -28,41 +28,41 @@ groups:
         annotations:
           summary: The Global cache is not receiving any data since 1 hour.
       
-      # More than 10 download errors from center in the last hour for 6 hours
-      - alert: Download_errors_from_center
+      # More than 10 download errors from centre in the last hour for 6 hours
+      - alert: Download_errors_from_centre
         expr: group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h]) > 10) > 0
         for: 6h
         labels:
           severity: warning
         annotations:
-          summary: The Global cache has more than 10 download errors from center in 1 hour over the last 6 hours
+          summary: The Global cache has more than 10 download errors from centre in 1 hour over the last 6 hours
       
-      # More than 10 download errors from center in the last hour for 6 hours at all caches
+      # More than 10 download errors from centre in the last hour for 6 hours at all caches
       - alert: Download_errors_all_caches
         expr: sum by (centre_id) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h])>10)) > 2
         for: 6h
         labels:
           severity: error
         annotations:
-          summary: All caches have more than 10 download errors from center in 1 hour over the last 6 hours
+          summary: All caches have more than 10 download errors from centre in 1 hour over the last 6 hours
 
-      # More than 10 centers have download errors in the last hour over 1 hour
+      # More than 10 centres have download errors in the last hour over 1 hour
       - alert: Download_errors
         expr: sum by (report_by) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h])>10)) > 10
         for: 1h
         labels:
           severity: error
         annotations:
-          summary: The Global Cache has download errors for more than 10 centers per 1 hour over the last 1 hour
+          summary: The Global Cache has download errors for more than 10 centres per 1 hour over the last 1 hour
       
-      # More than 20 centers have download errors in the last hour over 1 hour
+      # More than 20 centres have download errors in the last hour over 1 hour
       - alert: Download_errors_critical
         expr: sum by (report_by) (group by (centre_id,report_by) (delta (wmo_wis2_gc_downloaded_errors_total[1h])>10)) > 20
         for: 1h
         labels:
           severity: critical
         annotations:
-          summary: The Global Cache has download errors for more than 20 centers per 1 hour over the last 1 hour
+          summary: The Global Cache has download errors for more than 20 centres per 1 hour over the last 1 hour
       
       # Connection error to dataserver over 24h
       - alert: Dataserver_connection
