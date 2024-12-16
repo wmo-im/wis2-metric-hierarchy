@@ -16,7 +16,7 @@ groups:
         annotations:
           summary: Download errors from Global Cache in the last hour
       - alert: Metadata_archive_older_than_24_hours
-        expr: time() - wmo_wis2_gc_last_metadata_timestamp_seconds > 86400
+        expr: time() - wmo_wis2_gc_last_metadata_timestamp_seconds{centre_id =~ ".*global-discovery-catalogue"} > 86400
         labels:
           severity: warning
         annotations:
