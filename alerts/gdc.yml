@@ -1,15 +1,23 @@
 groups:
   - name: GlobalDiscoveryCatalogue
     rules:
-      # Connection to a Global Broker is lost
       - alert: Connection_lost_from_global_broker
         expr: group by (centre_id) (wmo_wis2_gdc_connected_flag{centre_id =~ ".*global-broker"} == 0) > 0
         for: 10m
         labels:
-          severity: critical        
-      # Download errors from Global Cache in the last hour
+          severity: critical 
+        annotations:
+          summary: Connection to a Global Broker is lost
       - alert: Download_errors_from_global_cache
         expr: group by (centre_id) (delta (wmo_wis2_gdc_downloaded_errors_total{centre_id =~ ".*global-cache"}[1h]) > 0) > 0
         for: 1h
         labels:
           severity: warning
+        annotations:
+          summary: Download errors from Global Cache in the last hour
+      - alert: Metadata_archive_older_than_24_hours
+        expr: time() - wmo_wis2_gc_last_metadata_timestamp_seconds{centre_id =~ ".*global-discovery-catalogue"} > 86400
+        labels:
+          severity: warning
+        annotations:
+          summary: Last metadata archive is older than 24 hours
