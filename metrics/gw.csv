@@ -1,0 +1,5 @@
+Name,Labels,Description,Child,Initialize
+wmo_wis2_gw_published_total,CCCC|report_by,Number of messages published; grouped by GTS CCCC code,-,false
+wmo_wis2_gw_gts_received_total,CCCC|report_by,Number of messages received from GTS; grouped by GTS CCCC code (variance with wmo_wis2_gw_published_total indicates processing failure),-,false
+wmo_wis2_gw_published_errors_total,CCCC|report_by,Number of errors occurring while processing messages received from GTS; grouped by GTS CCCC code,-,false
+wmo_wis2_gw_gts_last_received_timestamp_seconds,CCCC|report_by,Timestamp of most recent message received from GTS; grouped by GTS CCCC code,-,false
