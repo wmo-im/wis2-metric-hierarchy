@@ -27,6 +27,8 @@ The further required labels are part of the metric definition.
 |gc|Metrics related to the Global Cache|gc.csv
 |gdc|Metrics related to the Global Discovery Catalogue|gdc.csv
 |gm|Metrics related to the Global Monitoring|gm.csv
+|gw|Metrics related to the GTS-to-WIS2 Gateway|gw.csv
+|wg|Metrics related to the WIS2-to-GTS Gateway|wg.csv
 |sgc|Metrics on the Performance of Global Caches from Sensor Centres|sgc.csv
 |sgb|Metrics on the Performance of Global Brokers from Sensor Centres|sgb.csv
 |sgdc|Metrics on the Performance of Global Discovery Catalogues from Sensor Centres|sgdc.csv
