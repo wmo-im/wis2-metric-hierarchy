@@ -1,7 +1,7 @@
 Name,Labels,Description,Child
 wmo_wis2_sgc_cache_delay_seconds,globalcache|centre_id|report_by,Delay between origin and cache message,-
 wmo_wis2_sgc_messages_cached_total,globalcache|centre_id|report_by,Number of data files cached for centre_id,-
-wmo_wis2_sgc_messages_cached_delay_total,globalcache|centre_id|delay|report_by,Number of data files cached for centre_id within defined delay (120 300s, 600s),-
+wmo_wis2_sgc_messages_cached_delay_total,globalcache|centre_id|delay|report_by,Number of data files cached for centre_id within defined delay (120s 300s 600s),-
 wmo_wis2_sgc_messages_published_total,centre_id|report_by,Number of cacheable data files published,-
 wmo_wis2_sgc_messages_missed_total,globalcache|centre_id|report_by,Number of cacheable data not in global cache,-
 wmo_wis2_sgc_messages_missed_all_total,centre_id|report_by,Number of cacheable data not in any cache,-
