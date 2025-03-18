@@ -32,4 +32,5 @@ The further required labels are part of the metric definition.
 |sgc|Metrics on the Performance of Global Caches from Sensor Centres|sgc.csv
 |sgb|Metrics on the Performance of Global Brokers from Sensor Centres|sgb.csv
 |sgdc|Metrics on the Performance of Global Discovery Catalogues from Sensor Centres|sgdc.csv
+|sgts|Metrics on the Publication of GTS Data in WIS2 from Sensor Centres|sgts.csv
 |sobs|Metrics on the Availability of Observations from Sensor Centres|sobs.csv
