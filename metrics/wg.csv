@@ -1,7 +1,7 @@
 Name,Labels,Description,Child,Initialize
 wmo_wis2_wg_downloaded_total,centre_id|report_by,Number of data items downloaded by the Gateway for republication on GTS,-,false
-wmo_wis2_wg_messages_total,centre_id|report_by,Number of unique messages received by the Gateway,-,false
-wmo_wis2_wg_messages_gtsproperties_total,centre_id|report_by,Number of unique messages containing GTS properties received by the Gateway,-,false
+wmo_wis2_wg_messages_total,centre_id|report_by,Number of unique notification messages received by the Gateway,-,false
+wmo_wis2_wg_messages_gtsproperties_total,centre_id|report_by,Number of unique notification messages containing GTS properties received by the Gateway,-,false
 wmo_wis2_wg_downloaded_errors_total,centre_id|report_by,Number of download errors encountered,-,false
 wmo_wis2_wg_dataserver_status_flag,centre_id|dataserver|report_by,Status of WIS2 Node dataserver (1-up and 0-down),-,false
 wmo_wis2_wg_dataserver_last_download_timestamp_seconds,centre_id|dataserver|report_by,Timestamp of last successful download,-,false
