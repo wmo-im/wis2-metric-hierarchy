@@ -1,0 +1,3 @@
+Name,Labels,Description,Child,Initialize
+wmo_wis2_grep_connected_flag,centre_id|report_by,Connection status from GRep to to centre,-,false
+wmo_wis2_grep_api_status,centre_id,Status of GRep API,-,false

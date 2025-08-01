@@ -1,0 +1,17 @@
+groups:
+  - name: GlobalReplay
+    rules:
+      - alert: Connection_lost_from_global_broker
+        expr: group by (centre_id) (wmo_wis2_grep_connected_flag{centre_id =~ ".*global-broker"} == 0) > 0
+        for: 10m
+        labels:
+          severity: critical 
+        annotations:
+          summary: Connection to a Global Broker is lost
+      - alert: API_unavailable
+        expr: wmo_wis2_grep_api_status == 0
+        for: 1h
+        labels:
+          severity: critical
+        annotations:
+          summary: API is unavailable
