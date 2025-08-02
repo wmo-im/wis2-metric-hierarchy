@@ -1,4 +1,4 @@
 Name,Labels,Description,Child
-wmo_wis2_sgdc_last_download_timestamp_seconds,centre_id|report_by,Timestamp of the last successfully downloaded zip file by the Sensor Center for Global Discovery Catalogue,-
+wmo_wis2_sgdc_last_download_timestamp_seconds,centre_id|report_by,Timestamp of the last successfully downloaded zip file by the Sensor Centre for Global Discovery Catalogue,-
 wmo_wis2_sgdc_records_identical_value,centre_id|report_by,Number of metadata records stored by the GDC,-
 wmo_wis2_sgdc_records_incorrect_value,centre_id|report_by,Number of metedata records not consistent among GDC,-
