@@ -1,5 +1,5 @@
 groups:
-  - name: SensorGlobalDiscoveryCatalogue
+  - name: SensorCentreGlobalDiscoveryCatalogue
     rules:
       - alert: Metadata_archive_older_than_24_hours
         expr: time() - wmo_wis2_scgdc_last_metadata_timestamp_seconds{centre_id =~ ".*global-discovery-catalogue"} > 86400
