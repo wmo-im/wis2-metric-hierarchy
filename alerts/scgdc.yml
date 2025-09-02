@@ -1,0 +1,21 @@
+groups:
+  - name: SensorCentreGlobalDiscoveryCatalogue
+    rules:
+      - alert: Metadata_archive_older_than_24_hours
+        expr: time() - wmo_wis2_scgdc_last_metadata_timestamp_seconds{centre_id =~ ".*global-discovery-catalogue"} > 86400
+        labels:
+          severity: warning
+        annotations:
+          summary: Last metadata archive is older than 24 hours
+      - alert: Metadata_archive_older_than_48_hours
+        expr: time() - wmo_wis2_scgdc_last_metadata_timestamp_seconds{centre_id =~ ".*global-discovery-catalogue"} > 172800
+        labels:
+          severity: error
+        annotations:
+          summary: Last metadata archive is older than 2 days
+      - alert: Metadata_archive_older_than_72_hours
+        expr: time() - wmo_wis2_scgdc_last_metadata_timestamp_seconds{centre_id =~ ".*global-discovery-catalogue"} > 259200
+        labels:
+          severity: critical
+        annotations:
+          summary: Last metadata archive is older than 3 days         
