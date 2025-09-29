@@ -1,4 +1,4 @@
 Name,Labels,Description,Child
 wmo_wis2_scgb_connected_flag,centre_id|report_by,Connection status to the Global Broker,-
-wmo_wis2_scgb_last_message_timestamp_seconds,centre_id|report_by,Timestamp of the last message from the Global Broker,-
-wmo_wis2_scgb_messages_published_total,centre_id|report_by|topic,Number of messages published on the given topic,-
+wmo_wis2_scgb_last_message_timestamp_seconds,centre_id|report_by|topic,Timestamp of the last message from the Global Broker on the given topics,-
+wmo_wis2_scgb_messages_published_total,centre_id|report_by|topic,Number of messages published on the given topics,-
