@@ -19,7 +19,7 @@ groups:
 
   - alert: disconnectedwis2nodeallgb
     expr: ( globalmonitor:wmo_wis2_gm_gb_connectivity:total - count by (centre_id) ( wmo_wis2_gb_connected_flag == 0 ) == 0 )
-    for: 30m
+    for: 1h
     labels:
       severity: critical
     annotations:
