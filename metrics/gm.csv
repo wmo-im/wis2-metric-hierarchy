@@ -1,7 +1,4 @@
 Name,Labels,Description,Child,Initialize
 wmo_wis2_gm_metricserver_status_flag,centre_id|report_by,Status of the metric endpoint for centre (1-up and 0-down),-,false
 wmo_wis2_gm_metricserver_last_scrape_timestamp_seconds,centre_id|report_by,Timestamp of last succesful metric scrape,-,false
-wmo_wis2_gm_invalid_metrics_total,centre_id|report_by,Number of invalid metrics from center,-,false
-wmo_wis2_gm_ims_connected_flag,'wmo-ims'|report_by,Connection status from gm to WMO IMS (1-up and 0-down),-,false
-wmo_wis2_gm_messages_alert_published_total,centre_id|level|report_by,Number of alert messages with different levels (warning; error; critical) that report the issue of the target centre,-,false
-wmo_wis2_gm_tickets_published_total,centre_id|report_by,Number of ticket that report the issue of the target centre,-,false
+wmo_wis2_gm_invalid_metrics_total,centre_id|report_by,Number of invalid metrics from centre,-,false
