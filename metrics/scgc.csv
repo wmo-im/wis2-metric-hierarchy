@@ -6,3 +6,4 @@ wmo_wis2_scgc_messages_duplicates_total,centre_id|report_by,Number of messages w
 wmo_wis2_scgc_messages_published_total,centre_id|report_by,Number of cacheable data files published,-
 wmo_wis2_scgc_messages_missed_total,global_cache|centre_id|report_by,Number of cacheable data not in global cache,-
 wmo_wis2_scgc_messages_missed_all_total,centre_id|report_by,Number of cacheable data not in any cache,-
+wmo_wis2_scgc_messages_cache_override_total,global_cache|centre_id|report_by,Number of cacheable data with override cache directive,-
