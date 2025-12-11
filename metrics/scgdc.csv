@@ -1,0 +1,6 @@
+Name,Labels,Description,Child
+wmo_wis2_scgdc_last_download_timestamp_seconds,centre_id|report_by,Timestamp of the last successfully downloaded zip file by the Sensor Centre for Global Discovery Catalogue,-
+wmo_wis2_scgdc_record_invalid_total,metadata_id|centre_id|metadata_id|report_by,WCMP2 id of invalid record,-
+wmo_wis2_scgdc_records_identical_total,centre_id|report_by,Number of metadata records stored by the GDC,-
+wmo_wis2_scgdc_records_incorrect_total,centre_id|report_by,Number of metedata records not consistent among GDC,-
+wmo_wis2_scgdc_records_received_total,centre_id|report_by,Number of metadata records found in zipfile,-
