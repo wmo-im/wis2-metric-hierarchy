@@ -1,4 +1,4 @@
 Name,Labels,Description,Child,Initialize
-wmo_wis2_sgts_messages_gtsproperties_total,report_by|centre_id|ttaaii|cccc,Number of messages published containing valid properties.gts (TTAAii CCCC),-,false
-wmo_wis2_sgts_messages_gtsproperties_invalid_format_total,report_by|centre_id|ttaaii|cccc,Number of messages published containing incorrectly formatted properties.gts (TTAAii CCCC - character case ignored) - ttaaii and cccc labels are derived from the WMN and are set as 'null' if missing,-,false
-wmo_wis2_sgts_messages_gtsproperties_notinC1_total,report_by|centre_id|ttaaii|cccc,Number of messages published containing correctly formatted properties.gts (TTAAii CCCC) that do not occur in Vol C1,-,false
+wmo_wis2_scgts_messages_gtsproperties_total,report_by|centre_id|ttaaii|cccc,Number of messages published containing valid properties.gts (TTAAii CCCC),-,false
+wmo_wis2_scgts_messages_gtsproperties_invalid_format_total,report_by|centre_id|ttaaii|cccc,Number of messages published containing incorrectly formatted properties.gts (TTAAii CCCC - character case ignored) - ttaaii and cccc labels are derived from the WMN and are set as 'null' if missing,-,false
+wmo_wis2_scgts_messages_gtsproperties_notinC1_total,report_by|centre_id|ttaaii|cccc,Number of messages published containing correctly formatted properties.gts (TTAAii CCCC) that do not occur in Vol C1,-,false
