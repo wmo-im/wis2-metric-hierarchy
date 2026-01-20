@@ -14,9 +14,17 @@ The primary topic levels are described in the following table. The individual le
 
 ## Labels
 
-All metrics should at least contain the labels [`centre_id`] which indicates whose status this metric refers to, and [`report_by`] the name of the centre reporting this metric.
+All metrics should at least contain the following labels:
+- [`centre_id`] which indicates whose status this metric refers to.
+  - For Global Brokers: use the `centre-id` of the WIS2 component where the WIS2 Notification Message originated.
+  - For Global Caches: use the `centre-id` of the WIS2 component from where a resource is downloaded and cached, e.g., the origin WIS2 Node (parsed from the 4th field of the WIS2 Topic) or a Global Cache (parsed from the `properties.global-cache` object in the WIS2 Notification Message).
+  - For Global Discovery Catalogues: use the `centre-id` of the WIS2 Node where the discovery metadata record originated.
+  - For Global Monitors: use the `centre-id` of the WIS2 component that is publishing the metrics being downloaded.
+- [`report_by`] the `centre-id` of the WIS2 component reporting this metric.
 
-**Example** wmo\_wis2\_gc\_downloaded\_total\{centre\_id=\"de-dwd-global-cache\",report\_by=\"de-dwd-global-cache\"}
+The `centre-id` for each WIS2 component (WIS2 Node, Global Service, Sensor Centre, etc.) is listed in the [WMO Codes Registry](http://codes.wmo.int/wis/topic-hierarchy/centre-id).
+
+**Example**: `wmo\_wis2\_gc\_downloaded\_total\{centre\_id=\"ca-eccc-msc\",report\_by=\"de-dwd-global-cache\"}` provides a count of the total number of data items that the German Global Cache (`de-dwd-global-cache`) has downloaded from the Meteorological Service of Canada WIS2 Node (`ca-eccc-msc`). 
 
 The further required labels are part of the metric definition.
 
