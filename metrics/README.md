@@ -37,8 +37,8 @@ The further required labels are part of the metric definition.
 |gm|Metrics related to the Global Monitoring|gm.csv
 |gw|Metrics related to the GTS-to-WIS2 Gateway|gw.csv
 |wg|Metrics related to the WIS2-to-GTS Gateway|wg.csv
-|sgc|Metrics on the Performance of Global Caches from Sensor Centres|sgc.csv
-|sgb|Metrics on the Performance of Global Brokers from Sensor Centres|sgb.csv
-|sgdc|Metrics on the Performance of Global Discovery Catalogues from Sensor Centres|sgdc.csv
-|sgts|Metrics on the Publication of GTS Data in WIS2 from Sensor Centres|sgts.csv
-|sobs|Metrics on the Availability of Observations from Sensor Centres|sobs.csv
+|scgc|Metrics on the Performance of Global Caches from Sensor Centres|sgc.csv
+|scgb|Metrics on the Performance of Global Brokers from Sensor Centres|sgb.csv
+|scgdc|Metrics on the Performance of Global Discovery Catalogues from Sensor Centres|sgdc.csv
+|scgts|Metrics on the Publication of GTS Data in WIS2 from Sensor Centres|sgts.csv
+|scobs|Metrics on the Availability of Observations from Sensor Centres|sobs.csv
