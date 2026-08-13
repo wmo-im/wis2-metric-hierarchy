@@ -5,4 +5,5 @@ wmo_wis2_gb_messages_invalid_format_total,centre_id|report_by,Number of invalid 
 wmo_wis2_gb_messages_published_total,centre_id|report_by,Number of messages published by broker,-,false
 wmo_wis2_gb_messages_received_total,centre_id|report_by,Number of messages received by broker,-,false
 wmo_wis2_gb_connected_flag,centre_id|report_by,Connection status from broker to centre,-,false
+wmo_wis2_gb_connected_backup_flag,centre_id|report_by,Connection status from broker to backup centre,-,false
 wmo_wis2_gb_last_message_timestamp_seconds,centre_id|report_by,Timestamp of last message received from centre,-,false
