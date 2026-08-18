@@ -1,0 +1,7 @@
+Name,Labels,Description,Child
+wmo_wis2_scgrep_messages_received_during_interval_total,report_by|topic,Number of messages received from Global Brokers during test interval,-
+wmo_wis2_scgrep_messages_fetched_http_during_interval_total,report_by|topic,Number of messages accessed via synchronous HTTP requests during test interval,-
+wmo_wis2_scgrep_messages_fetched_mqtt_during_interval_total,report_by|topic,Number of messages accessed via asynchronous MWTT requests during test interval,-
+wmo_wis2_scgrep_test_aborted_flag,report_by|topic|protocol,Whether all messages are not received before 98% of the test interval has completed,-
+wmo_wis2_scgrep_fetch_delay_time,report_by|topic|protocol,Number of seconds until the first byte is returned following a request during test interval,-
+wmo_wis2_scgrep_message_invalid_format_total,report_by|topic|protocol,Number of occurances that messages (received via HTTP or MQTT) fail message schema validation,-
