@@ -5,3 +5,11 @@ wmo_wis2_scgrep_messages_fetched_mqtt_during_interval_total,report_by|topic,Numb
 wmo_wis2_scgrep_test_aborted_flag,report_by|topic|protocol,Whether all messages are not received before 98% of the test interval has completed,-
 wmo_wis2_scgrep_fetch_delay_time,report_by|topic|protocol,Number of seconds until the first byte is returned following a request during test interval,-
 wmo_wis2_scgrep_message_invalid_format_total,report_by|topic|protocol,Number of occurances that messages (received via HTTP or MQTT) fail message schema validation,-
+wmo_wis2_scgrep_messages_received_total,topic|report_by,Number of messages received from the Global Brokers on topic (the baseline),-
+wmo_wis2_scgrep_messages_fetched_total,centre_id|topic|protocol|report_by,Number of messages retrieved from the Global Replay service by retrieval protocol (HTTP or MQTT),-
+wmo_wis2_scgrep_fetch_delay_time,centre_id|topic|protocol|report_by,Milliseconds to the first byte (HTTP) or the first replayed message (MQTT),-
+wmo_wis2_scgrep_test_aborted_flag,centre_id|topic|protocol|report_by,Set to 1 when retrieval did not complete within the test period,-
+wmo_wis2_scgrep_response_invalid_format_flag,centre_id|topic|protocol|report_by,Set to 1 when the response from the Global Replay service was malformed,-
+wmo_wis2_scgrep_response_invalid_numberMatched_flag,centre_id|topic|protocol|report_by,Set to 1 when the number of messages returned did not equal numberMatched (HTTP only),-
+wmo_wis2_scgrep_http_response_code_value,centre_id|topic|protocol|report_by,HTTP status code of the request - 0 when no response was received,-
+wmo_wis2_scgrep_broker_status_flag,url|report_by,Set to 1 when the MQTT connection to upstream broker is established,-
